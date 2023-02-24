@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>PRODUCT DESIGNER.</title>
+<author>welcome</author>
+<body style="background-color:black"></body>
+    <style>
+        .all {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            color: white;
+            display: flex;
+            gap: 1em;
+            align-content: center;
+        }
+        body { 
+            grid-template-areas: 
+                "header"
+                "article"
+                "ads"
+                "nav"
+                "footer";
+            grid-template-rows: 80px 1fr 70px 1fr 70px;  
+            grid-template-columns: 1fr;
+        }
+        .work {
+            display: grid;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            }
+
+            /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .header {
+            text-align: center;
+        }
+    </style>
+<body> 
+<div class="all">
+    <div class="header">
+        <img src="intro.jpg"/>
+        <h5>product designer in the making.</h5>
+    <div>
+    <br>
+    <div class="about">
+        <h3>about.</h3>
+        <p class="text">i am a sophomore at uc berkeley majoring in data science. my interests are film, fashion, and the invention and future of technology.</p>
+    </div>
+    <br>
+        <div class="row"><h3>my work.</h3>
+            <div class="column">recruitR: a prototype matchmaker app for employees and companies.
+                <a href="https://www.figma.com/file/mInAaCqhUeqw7ejIKmV3LM/RecruitR?node-id=0%3A1&t=nFpdP0W8rk0aEzun-1" target="_blank"></a>
+            </div>
+            <div class="column">LoveReads: social media app for booklovers.
+                <a href="https://www.figma.com/file/JdrTewS7NuUoOHQXav9eiw/bookstore!?node-id=0%3A1&t=fcyVb1YAuLkzWaPu-1" target="_blank"></a>
+            </div>
+          </div>
+    </div>
+    <form action="https://www.figma.com/file/mInAaCqhUeqw7ejIKmV3LM/RecruitR?node-id=0%3A1&t=nFpdP0W8rk0aEzun-1">
+        <button type="submit">check it out!</button>
+     </form>
+    <h3>contact me.</h3>
+        <div class="container">
+            <div class="item item-1"><a href="https://www.linkedin.com/in/mary-mourtazo-882446220/" target="_blank">linkedin.</a></div>
+            <div class="item item-2"><a href="https://www.instagram.com/ target="_blank">instagram.</a></div>
+    </div>
+</div>
+    <br>
+    <br>
+    <h4>let's talk more.</h4>
+    <form>
+        <label for="fname">name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">email:</label><br>
+        <input type="text" id="email" name="email">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <br>
+      <br>
+    <button class="event-button">sus..</button>
+    <script>
+        const button = document.querySelector('.event-button');
+        button.addEventListener('click', function () {
+          alert('submit your name and email now!!!!!');
+        });
+    </script>
+</body>
+</html>

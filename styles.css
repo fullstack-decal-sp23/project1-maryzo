@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-position: center;
+}
+.content-1 {
+    grid-area: content-1;
+    border-top: 1px white;
+    border-radius:10px;
+}
+.all {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    color: white;
+    display: flex;
+    gap: 1em;
+}
+body { 
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+}
+.work {
+    display: grid;
+}
+.column {
+    float: left;
+    width: 50%;
+    }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header {
+    text-align: center;
+}
